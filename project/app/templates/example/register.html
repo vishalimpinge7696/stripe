@@ -73,7 +73,7 @@ body {
 			<div class="panel panel-default" style="margin-top:50px;">
 				<div class="panel-heading" style="text-align:center; font-size:25px;">Registeration Form</div>
 				<div class="panel-body">
-    <form method="POST" action="{% url 'register' %}"  enctype="multipart/form-data">
+    <form method="POST" action=""  enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
         {{ profile_form.as_p }}

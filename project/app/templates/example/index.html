@@ -11,8 +11,8 @@
     <h2>Your username is {{ username }}.</h2>
     {% if user.is_authenticated %}
     <h3>Your email is {{ user.email }}.</h3>
-    <h3>Your email is {{ user.userprofile.photo }}.</h3>
-    <h3>Your email is {{ user.userprofile.contact }}.</h3>
+    <h3>Your email is {{ user.user_profile.photo }}.</h3>
+    <h3>Your email is {{ user.user_profile.contact }}.</h3>
     {% endif %}
 </body>
 </html>

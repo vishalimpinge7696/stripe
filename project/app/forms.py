@@ -6,8 +6,8 @@ from .models import UserProfile
 
 class ExtendedUserCreationForm(UserCreationForm):
 
-    first_name = forms.CharField(max_length= 100,required=True)
-    last_name = forms.CharField(max_length= 100,required=True)
+    first_name = forms.CharField(max_length=100, required=True)
+    last_name = forms.CharField(max_length=100, required=True)
     email = forms.EmailField(required=True, widget=forms.EmailInput(
         attrs={'class': 'form-control', 'placeholder': 'Enter the E-mail ID'
                }))
@@ -30,8 +30,8 @@ class ExtendedUserCreationForm(UserCreationForm):
 
 class UserProfileForm(forms.ModelForm):
 
-    photo = forms.FileField(required=True, widget=forms.FileInput(
-        attrs={'class': 'form-control', 'multiple': True,  'accept': 'image/*'})),
+    # photo = forms.FileField(required=True, widget=forms.FileInput(
+        # attrs={'class': 'form-control', 'multiple': True,  'accept': 'image/*'})),
 
     contact = forms.IntegerField(required=True, widget=forms.NumberInput(
         attrs={'class': 'form-control', 'placeholder': 'Enter the Contact'}))

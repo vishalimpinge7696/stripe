@@ -1,0 +1,12 @@
+{% extends 'stripe/template.html' %}
+{% load static %}
+{% block content %}
+	<div id="box">
+		<img id="success-icon" src="{% static 'images/check.png' %}">
+		<h4>Thank you for your contribution of inr{{amount}}!</h4>
+		<p>STRIPE IMPLEMENTATION SUCCESSFUL WITH PAYMENT RECEIVED </p>
+		<hr>
+		<a class="myButton" href="{% url 'index1' %}">&#x2190;Back to donation page</a>
+	</div>
+
+{% endblock content %}
